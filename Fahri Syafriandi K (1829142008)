@@ -1,0 +1,36 @@
+class Mobil(object):
+           def__init__(self,t,h,s):
+                     self.toyota=t
+                     self.honda=h
+                     self.suzuki=s
+                     
+           def jumlahMobil(self):
+                     return self.toyota+self.honda+self.suzuki
+                     
+           def cetakData(self):
+                     print("Toyota\t:",self.toyota)
+                     print("Honda\t:",self.honda)
+                     print("Suzuki\t:",self.suzuki)
+                     
+           def cetakJM(self):
+                     print("Total dari semua mobil diatas\t=",self.jumlahMobil())
+                     
+class WarnaMobil(Mobil):
+         def__init__(self,t,h,s,w):
+                  self.toyota=t
+                  self.honda=h
+                  self.suzuki=s
+                  self.warna=w
+         def cetakData(self):
+                  print("Toyota\t:",self.toyota)
+                  print("Honda\t:",self.honda)
+                  print("Suzuki\t:",self.suzuki)
+                  print("Warna dari semua mobil tersebut adalah",self.warna)
+                  
+def main():
+           wm1=WarnaMobil(11,2,24,"putih")
+           wm1.cetakData()
+           wm1.cetakJM()
+           
+if__name__=="__main__":
+        main()
